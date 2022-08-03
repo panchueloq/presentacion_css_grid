@@ -1,0 +1,74 @@
+.container {
+    border: 5px solid red;
+    background-color: white;
+    display: grid;
+
+    /* ---> Podemos ordenar el contenido en columnas 
+            y filas: */
+
+    /* grid-template-columns: 150px 150px 150px; */
+    /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+
+    /* ---> Agregar espacio entre los ítems: */
+
+    /* column-gap: 10px; */
+    /* row-gap:5px; */
+    /* gap: 5px; */
+
+    /* ---> También colocar el contenido en diferentes 
+            posiciones relativas al contenedor:
+            (center, space-evenly, end...) */
+
+    /* justify-content: center; */
+
+}
+
+.item {
+    border: 5px solid black;
+    background-color: blue;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item1 {
+    /* ---> Si nos enfocamos en el ítem 1: */
+
+    /* background-color: yellow; */
+
+    /* ---> Podemos indicar qué posición queremos 
+            que tome un ítem de forma horizontal
+            o vertical: */
+
+    /* grid-column: 1 / span 3; */
+
+    /* ---> Así como podemos cambiar su tamaño y
+            posicionarlo respecto a su propia celda: */
+
+    /* width: 70%; */
+    /* height: 70%; */
+    /* justify-self: center; */
+    /* align-self: center; */
+}
+
+.item2 {
+    /* ---> Si nos enfocamos en el ítem 2: */
+
+    /* background-color: lightgreen; */
+
+    /* ---> Podemos indicar directamente el área
+            que queremos que cubra: */
+
+    /* grid-area: 2/1/4/3; */
+}
+
+.item4 {
+
+    /* ---> Para poner otro ejemplo: */
+
+    /* background-color: violet; */
+    /* grid-row: 3 / 5; */
+    /* width: 50%; */
+    /* height: 50%; */
+    /* justify-self: end; */
+    /* align-self: end; */
+}
